@@ -1,0 +1,38 @@
+{
+    "personal":[
+        {
+            "moneyicon":"https://image.flaticon.com/icons/svg/985/985647.svg",
+            "money":"10.00",
+            "moneyrate":"https://public-v2links.adobecc.com/08ea9ad3-c345-4a0c-7df9-62404d13a889/component?params=component_id%3A6898503c-6dd8-48f6-9289-514ecf75b6e0&params=version%3A0&token=1587799325_da39a3ee_d0ee17157337d06df52a769203f6cb9a6f60f5e1&api_key=CometServer1"
+
+        }
+    ],
+    "NewsTitle":"News",
+    "News":[
+        {
+            "pic":"https://cimg.cnyes.cool/prod/news/4468265/l/495be2394a6cdd72e2d86c3f5d188563.jpg",
+            "tip":"〈每日外資外匯觀點〉歐元區經濟大萎縮 美元升值還在歐元傷口灑鹽",
+            "more":"閱讀更多...",
+            "link":"https://news.cnyes.com/news/id/4468265?exp=a"
+        },
+        {
+            "pic":"https://cimg.cnyes.cool/prod/news/4468195/l/dddc2d31fb31d03d9203435e5eb46b0e.jpg",
+            "tip":"  商品貨幣近期隨油價走低 成投資者做空標的",
+            "more":"閱讀更多...",
+            "link":"https://news.cnyes.com/news/id/4468195?exp=a"
+        },
+        {
+            "pic":"https://cimg.cnyes.cool/prod/news/4453151/l/7a105d4ec764d42fa8976f43284ca4e9.jpg",
+            "tip":"  紐西蘭央行緊急降息3碼 紐幣急跌後回穩",
+            "more":"閱讀更多...",
+            "link":"https://news.cnyes.com/news/id/4453151?exp=a"
+        },
+        {
+            "pic":"https://cimg.cnyes.cool/prod/news/4468091/l/91cb145157c29553be3edf2ad7bebe5e.jpg",
+            "tip":"〈紐約匯市〉歐元區PMI數據萎靡 歐元走軟 美元持續上行",
+            "more":"閱讀更多...",
+            "link":"https://news.cnyes.com/news/id/4468091?exp=a"
+        }
+
+    ]
+}
