@@ -1,7 +1,7 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { SplashScreen } from 'expo';
+
 import { Image ,View,AsyncStorage} from "react-native";
 import HomeScreen from "../screens/HomeSrceen";
 import ChartlineScreen from "../screens/ChartlineScreen";
@@ -37,12 +37,13 @@ function MainTabNavigation() {
   } else {
   return (
 
-    <NavigationContainer
+    <NavigationContainer>
     initialState={initialNavigationState}
     onStateChange={(state) =>
       AsyncStorage.setItem(PERSISTENCE_KEY, JSON.stringify(state))
     }
->
+
+
         
             <Tab.Navigator
             
@@ -107,7 +108,6 @@ function MainTabNavigation() {
             </Tab.Navigator>
         </NavigationContainer>
     );
-}
-}
+};
 
 export default MainTabNavigation;

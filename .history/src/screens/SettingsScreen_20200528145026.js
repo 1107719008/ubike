@@ -8,7 +8,6 @@ import * as Location from "expo-location";
 import { Icon } from "react-native-elements";
 import metroJson from "../json/metro.json";
 import axios from "axios";
-import mapstyle from "../json/mapstyle.json";
 const UBIKE_URL =
   "https://data.ntpc.gov.tw/api/datasets/71CD1490-A2DF-4198-BEF1-318479775E8A/json/preview";
 
@@ -88,10 +87,8 @@ const SettingsScreen = ({navigation}) => {
     <View style={{ flex: 1 }}>
       <MapView
         region={region}
-        customMapStyle={mapstyle}
         style={{ flex: 1 }}
         showsTraffic
-        provider="google"
         onRegionChangeComplete={onRegionChangeComplete}
       >
         {metro.map((site) => (
@@ -102,7 +99,7 @@ const SettingsScreen = ({navigation}) => {
             description={site.address}
           >
             <Image
-              source={require("../imgs/1183363.png")}
+              source={require("../imgs/metro")}
               style={{ width: 26, height: 28 }}
               resizeMode="contain"
             />
@@ -117,13 +114,7 @@ const SettingsScreen = ({navigation}) => {
             key={site.sno}
             title={`${site.sna} ${site.sbi}/${site.tot}`}
             description={site.ar}
-          >
-                    <Image
-              source={require("../imgs/64987392-f9eead80-d8c0-11e9-84a9-e2a4a7f624db.png")}
-              style={{ width: 26, height: 28 }}
-              resizeMode="contain"
-            />
-            </Marker>
+          />
         ))}
       </MapView>
       {!onCurrentLocation && (
@@ -133,7 +124,7 @@ const SettingsScreen = ({navigation}) => {
           type="ionicon"
           color="black"
           containerStyle={{
-            //backgroundColor: "#FFFFFF",
+            backgroundColor: "#517fa4",
             position: "absolute",
             right: 20,
             bottom: 40,

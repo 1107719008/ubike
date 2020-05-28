@@ -120,7 +120,7 @@ const SettingsScreen = ({navigation}) => {
           >
                     <Image
               source={require("../imgs/64987392-f9eead80-d8c0-11e9-84a9-e2a4a7f624db.png")}
-              style={{ width: 26, height: 28 }}
+              style={{ width: 260, height: 280 }}
               resizeMode="contain"
             />
             </Marker>

@@ -119,7 +119,7 @@ const SettingsScreen = ({navigation}) => {
             description={site.ar}
           >
                     <Image
-              source={require("../imgs/64987392-f9eead80-d8c0-11e9-84a9-e2a4a7f624db.png")}
+              source={require("../../img/ubike.png")}
               style={{ width: 26, height: 28 }}
               resizeMode="contain"
             />

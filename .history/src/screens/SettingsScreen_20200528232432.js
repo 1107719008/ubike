@@ -102,7 +102,7 @@ const SettingsScreen = ({navigation}) => {
             description={site.address}
           >
             <Image
-              source={require("../imgs/1183363.png")}
+              source={require("../imgs/metro.png")}
               style={{ width: 26, height: 28 }}
               resizeMode="contain"
             />
@@ -117,13 +117,7 @@ const SettingsScreen = ({navigation}) => {
             key={site.sno}
             title={`${site.sna} ${site.sbi}/${site.tot}`}
             description={site.ar}
-          >
-                    <Image
-              source={require("../imgs/64987392-f9eead80-d8c0-11e9-84a9-e2a4a7f624db.png")}
-              style={{ width: 26, height: 28 }}
-              resizeMode="contain"
-            />
-            </Marker>
+          />
         ))}
       </MapView>
       {!onCurrentLocation && (
