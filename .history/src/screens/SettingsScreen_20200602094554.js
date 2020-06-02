@@ -9,12 +9,10 @@ import { Icon } from "react-native-elements";
 import metroJson from "../json/metro.json";
 import axios from "axios";
 import mapstyle from "../json/mapstyle.json";
-import {VictoryPie} from "victory-native";
+import VictoryPie from "victory-native";
 const UBIKE_URL =
   "https://data.ntpc.gov.tw/api/datasets/71CD1490-A2DF-4198-BEF1-318479775E8A/json/preview";
 
-
-const dataColor = ["pink", "violet"];
 
 const SettingsScreen = ({navigation}) => {
   const [region, setRegion] = useState({
@@ -121,7 +119,11 @@ const SettingsScreen = ({navigation}) => {
             title={`${site.sna} ${site.sbi}/${site.tot}`}
             description={site.ar}
           >
-         
+                    <Image
+              source={require("../imgs/64987392-f9eead80-d8c0-11e9-84a9-e2a4a7f624db.png")}
+              style={{ width: 26, height: 28 }}
+              resizeMode="contain"
+            />
                  <VictoryPie
                 width={150}
                 data={[
@@ -131,7 +133,6 @@ const SettingsScreen = ({navigation}) => {
                   
                 ]}
                 labelRadius={10}
-                innerRadius={10}
                 colorScale={dataColor}
                 />
             </Marker>

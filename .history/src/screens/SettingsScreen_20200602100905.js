@@ -14,7 +14,7 @@ const UBIKE_URL =
   "https://data.ntpc.gov.tw/api/datasets/71CD1490-A2DF-4198-BEF1-318479775E8A/json/preview";
 
 
-const dataColor = ["pink", "violet"];
+const dataColor = ["tomato", "orange"];
 
 const SettingsScreen = ({navigation}) => {
   const [region, setRegion] = useState({
@@ -123,7 +123,7 @@ const SettingsScreen = ({navigation}) => {
           >
          
                  <VictoryPie
-                width={150}
+                width={100}
                 data={[
                   {x:site.tot-site.sbi,y:100-(site.sbi/site.tot)*100},
                   
@@ -131,7 +131,6 @@ const SettingsScreen = ({navigation}) => {
                   
                 ]}
                 labelRadius={10}
-                innerRadius={10}
                 colorScale={dataColor}
                 />
             </Marker>
